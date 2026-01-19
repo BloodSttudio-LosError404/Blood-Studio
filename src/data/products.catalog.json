@@ -1,0 +1,44 @@
+{
+  "catalog": {
+    "id": "base",
+    "name": "Catálogo base",
+    "currency": "MXN",
+    "updatedAt": "2026-01-19"
+  },
+  "products": [
+    {
+      "id": "p-0001",
+      "name": "Producto personalizable",
+      "description": "Descripción pendiente de definir.",
+      "price": 0,
+      "rating": 4.8,
+      "reviews": 20,
+      "category": "vinil",
+      "season": "base",
+      "colors": ["negro", "blanco"],
+      "sizes": ["S", "M", "L"],
+      "tags": ["personalizable"],
+      "image": {
+        "src": "https://via.placeholder.com/640x480?text=Producto",
+        "alt": "Imagen referencial del producto"
+      }
+    },
+    {
+      "id": "p-0002",
+      "name": "Producto personalizable",
+      "description": "Descripción pendiente de definir.",
+      "price": 0,
+      "rating": 4.6,
+      "reviews": 12,
+      "category": "papeleria",
+      "season": "base",
+      "colors": ["otros"],
+      "sizes": ["UNICA"],
+      "tags": ["regalo"],
+      "image": {
+        "src": "https://via.placeholder.com/640x480?text=Producto",
+        "alt": "Imagen referencial del producto"
+      }
+    }
+  ]
+}
