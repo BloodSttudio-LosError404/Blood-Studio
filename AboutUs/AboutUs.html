@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="AboutUs.css">
     <title>Acerca de nosotros</title>
 </head>
@@ -14,11 +15,11 @@
     <!-- LOGO -->
     <div class="logo-container">
       <a href="#">
-        <img src="/src/images/logo.jpeg" alt="Logo" class="logo-img">
+        <img src="../src/images/logo.jpeg" alt="Logo" class="logo-img">
       </a>
     </div>
 
-    <!-- NAV -->
+    <!-- NAV DESKTOP -->
     <nav class="nav-principal">
       <ul>
         <li><a href="#">Inicio</a></li>
@@ -32,67 +33,93 @@
     <!-- BUSCADOR -->
     <div class="contenedor-buscador">
       <input type="text" placeholder="¿Qué estás buscando?">
-      <button>🔍</button>
+      <button>
+        <span class="material-symbols-outlined">search</span>
+      </button>
     </div>
 
     <!-- ICONOS -->
     <div class="iconos-acciones">
-      <a href="#">👤</a>
-      <a href="#">🤍</a>
-      <a href="#">🛍️</a>
+      <span class="material-symbols-outlined">account_circle</span>
+      <span class="material-symbols-outlined">favorite</span>
+      <span class="material-symbols-outlined">shopping_cart</span>
     </div>
 
-    <!-- BOTÓN MENÚ MÓVIL -->
+    <!-- BOTÓN HAMBURGUESA -->
     <button class="barras" aria-label="Abrir menú"></button>
 
   </div>
 </header>
+
+<!-- MENÚ MÓVIL -->
+<nav class="desplegable">
+  <ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Sobre Nosotros</a></li>
+    <li><a href="#">Tienda</a></li>
+    <li><a href="#">Contáctanos</a></li>
+    <li><a href="#">Visualizador</a></li>
+  </ul>
+</nav>
 
   <!-- Sore nosotros -->
     <div class="titulos-sobre-nosotros">
         <p class="sobre-nosotros-parrafo">Sobre nosotros</p>
     </div>
   <!-- Nuestratienbda -->
-    <div class="sobre-nosotros">
-        <img src="/src/images/tienda.jpg" class="nuestra-tienda">
-        <p class="nuestra-tienda-titulo"> Nuestra tienda </p>
-        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis corporis illo vitae, repellendus dolorum vero quos, totam ipsum voluptatibus eveniet modi tenetur! Quod iure eaque laboriosam maxime sapiente, quibusdam molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nisi eos provident enim porro error minima inventore laboriosam quos assumenda corporis eum doloribus voluptas accusantium, facere, fugit sequi deleniti. Enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos blanditiis adipisci deserunt ad voluptatem molestiae amet animi laudantium suscipit error earum ex similique modi, tempore debitis excepturi mollitia. Itaque, debitis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatibus magnam quas, animi minus illum et, praesentium dignissimos cupiditate nisi reiciendis! Fugit odio nisi accusantium optio nam aut quos ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. In officia ex dolorem? Iusto dolores, quia molestiae facilis consequuntur atque perferendis sed inventore assumenda! Perferendis excepturi explicabo dolore quod soluta nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ab iste. Delectus rerum similique minima dolorem vero laborum, cum perferendis exercitationem atque alias, accusamus aliquid quod numquam reiciendis totam nostrum?</p>
-    </div>
+<div class="sobre-nosotros">
+  <div class="bloque-imagen">
+    <img src="../src/images/tienda.jpg" alt="Nuestra tienda">
+  </div>
+
+  <div class="bloque-texto">
+    <h2 class="nuestra-tienda-titulo">Nuestra tienda</h2>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis corporis illo vitae, repellendus dolorum vero quos, totam ipsum voluptatibus eveniet modi tenetur! Quod iure eaque laboriosam maxime sapiente, quibusdam molestiae.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nisi eos provident enim porro error minima inventore laboriosam quos assumenda corporis eum doloribus voluptas accusantium, facere, fugit sequi deleniti.
+    </p>
+  </div>
+</div>
 
   <!-- Poque nosotros -->
     <div>
-        <p class="titulos-sobre-nosotros"> ¿Por qué nosotros? <img src="/src/images/persona.png" class="por-que-nosotros-img"> </p>
+        <p class="titulos-sobre-nosotros"> ¿Por qué nosotros? <img src="../src/images/persona.png" class="por-que-nosotros-img"> </p>
         
     </div>
   <!-- Nuestra mision y valores  -->
 
-          <!-- ====== MISIÓN ====== -->
-  <section class="about-mission">
-    <div class="about-mission__container">
+<!-- ====== MISIÓN ====== -->
+<section class="about-mission">
+  <div class="about-mission__container">
 
-      <div class="about-mission__text">
-        <h1>Nuestra Misión</h1>
-        <p>
-          Nuestra misión es ofrecer productos de alta calidad,
-          enfocados en la satisfacción del cliente y en la
-          innovación constante para mejorar la experiencia
-          de compra.
-        </p>
-      </div>
-
-      <div class="about-mission__image">
-        <img src="/src/images/missionImage.webp" alt="Nuestra misión" class="nuestra-mision">
-      </div>
-
+    <div class="about-mission__text">
+      <h2>Nuestra Misión</h2>
+      <p>
+        Nuestra misión es ofrecer productos de alta calidad,
+        enfocados en la satisfacción del cliente y en la
+        innovación constante para mejorar la experiencia
+        de compra.
+      </p>
     </div>
-  </section>
+
+    <div class="about-mission__image">
+      <img 
+        src="../src/images/missionImage.webp" 
+        alt="Nuestra misión"
+        class="nuestra-mision"
+      >
+    </div>
+
+  </div>
+</section>
+
 
   <!-- ====== VISIÓN ====== -->
   <section class="vision">
     <div class="vision__container">
 
       <div class="vision__image">
-        <img src="/src/images/vissionImage.webp" alt="Nuestra visión" class="nuestra-vision">
+        <img src="../src/images/vissionImage.webp" alt="Nuestra visión" class="nuestra-vision">
       </div>
 
       <div class="vision__content">
@@ -219,5 +246,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="./AboutUsCarousel.js"></script>
+    <script src="../src/ScriptHeader/script.js"></script>
 </body>
 </html>
