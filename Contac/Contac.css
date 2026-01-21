@@ -7,7 +7,7 @@ body {
   background-color: #faf8ff;
 }
 
-/* HEADER */
+/* ===== HEADER ===== */
 .header-principal {
   background-color: #F9F7FF;
   border-bottom: 1px solid #D9D9D9;
@@ -22,12 +22,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-sizing: border-box;
+  gap: 24px;
 }
 
-/* LOGO */
+/* ===== LOGO ===== */
 .logo-img {
-  height: 65px;
+  height: 95px;
   transition: transform 0.3s ease;
 }
 
@@ -35,28 +35,32 @@ body {
   transform: scale(1.05);
 }
 
-/* NAV */
+/* ===== NAV ===== */
+
+.nav-principal {
+  justify-self: center;
+}
+
 .nav-principal ul {
   display: flex;
   gap: 18px;
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .nav-principal a {
   text-decoration: none;
   color: #000;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  transition: color 0.3s;
 }
 
 .nav-principal a:hover {
   color: #4C3C68;
 }
 
-/* BUSCADOR */
+/* ===== BUSCADOR ===== */
 .contenedor-buscador {
   display: flex;
   align-items: center;
@@ -73,24 +77,41 @@ body {
   border: none;
   background-color: #4C3C68;
   color: white;
-  padding: 8px 18px;
+  padding: 1px 16px;
   border-radius: 0 25px 25px 0;
   cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* ICONOS */
+.contenedor-buscador .material-symbols-outlined {
+  font-size: px;
+  line-height: 1;
+  color: white;
+}
+
+
+/* ===== ICONOS ===== */
 .iconos-acciones {
   display: flex;
+  align-items: center;
   gap: 20px;
-  font-size: 1.4rem;
 }
 
-.iconos-acciones a {
-  text-decoration: none;
+.material-symbols-outlined {
+  font-size: 40px;
   color: #4C3C68;
+  cursor: pointer;
+  transition: transform 0.25s ease;
 }
 
-/* BOTÓN HAMBURGUESA */
+.material-symbols-outlined:hover {
+  transform: scale(1.15);
+}
+
+/* ===== HAMBURGUESA ===== */
 .barras {
   display: none;
   background-image: url('./../src/images/icono-menu.jpeg');
@@ -98,14 +119,47 @@ body {
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
 }
 
-/* RESPONSIVE */
-@media (max-width: 1024px) {
+/* ===== MENÚ MÓVIL ===== */
+.desplegable {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  background-color: #F9F7FF;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+  box-shadow: 5px 0 15px rgba(0,0,0,0.1);
+  padding-top: 100px;
+  z-index: 1000;
+}
 
+.desplegable ul {
+  list-style: none;
+  padding: 0 30px;
+}
+
+.desplegable li a {
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+  color: #4C3C68;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+/* CLASE ACTIVA */
+.abrir-menu {
+  transform: translateX(0);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
   .nav-principal,
   .contenedor-buscador {
     display: none;
@@ -115,20 +169,10 @@ body {
     display: block;
   }
 
-  .header-principal {
-    height: 80px;
-  }
-
   .logo-img {
     height: 45px;
   }
-
-  .iconos-acciones {
-    gap: 12px;
-    font-size: 1.2rem;
-  }
 }
-
 
 /* TÍTULO */
 .caja-degradado {
@@ -402,4 +446,89 @@ a:hover {
   .seccion-contacto {
     padding: 20px 40px;
   }
+}
+
+
+/* ==== FOOTER ==== */
+footer {
+  font-size: 14px;
+}
+
+footer ul li {
+  margin-bottom: 6px;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-list li {
+  position: relative;
+  cursor: pointer;
+  color: #b5b5b5;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-list li:hover {
+  color: #ffffff;
+  padding-left: 6px;
+}
+
+.social-icons i {
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons i:hover {
+  transform: translateY(-4px) scale(1.1);
+  color: #0d6efd; /* color Bootstrap primary */
+}
+
+.material-symbols-outlined {
+  font-size: 26px;
+}
+
+@media (max-width: 576px) {
+  footer h2 {
+    text-align: center;
+  }
+}
+
+/* BARRA INFERIOR FOOTER */
+.footer-bottom {
+  background: linear-gradient(to right, #111, #1a1a1a);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-link {
+  color: #b5b5b5;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+/* underline animado */
+.footer-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #0d6efd;
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+.footer-copy {
+  color: #b5b5b5;
 }
