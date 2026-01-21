@@ -205,11 +205,11 @@ body {
 /* Descripción */
 .descripcion-contacto {
   font-size: 20px;
-  color: rgba(0, 0, 0, 0.1);
+  color: rgb(9, 9, 9);
   line-height: 1.5;
 }
 
-.formulario-contacto {
+.form-contac{
   max-width: 520px;
   background: #f7f6fb;
   width: 60%;
@@ -305,7 +305,7 @@ h3 {
 
   /* El formulario ocupa casi todo el ancho */
 
-  .formulario-contacto {
+  .form-contac {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -347,4 +347,59 @@ a {
 a:hover {
     text-decoration: none; 
     color: black;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  /* Layout en columna */
+  .contacto-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  /* Imagen */
+  .contacto-info {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .imagen-contacto {
+    max-width: 450px;
+    margin: 0 auto 20px;
+  }
+
+  .descripcion-contacto {
+    font-size: 16px;
+    padding: 0 40px;
+  }
+
+  /* Formulario */
+  .form-contac {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 40px;
+  }
+
+  /* Inputs un poco más grandes */
+  .form-group input,
+  .form-group textarea {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  /* Títulos */
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  /* Sección */
+  .seccion-contacto {
+    padding: 20px 40px;
+  }
 }

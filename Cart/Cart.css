@@ -5,6 +5,7 @@ body {
   padding: 0;
   font-family: "Figtree", sans-serif;
   background-color: #faf8ff;
+  box-sizing: border-box;
 }
 
 /* HEADER */
@@ -137,4 +138,77 @@ body {
   font-size: 2.5rem;
   font-weight: 600;
   letter-spacing: 2px;
+}
+
+/* Contenedores*/
+
+/* Estilos de la lista de productos */
+.lista-productos {
+    flex-grow: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-right: auto;
+}
+
+/* Estilos del resumen del pedido */
+.carrito {
+    display: flex;
+}
+
+/* Encabezados de la tabla (usando Grid para alineación) */
+.encabezado {
+    display: grid;
+    /* Define 5 columnas con tamaños relativos */
+    grid-template-columns: 100px 1fr 100px 100px 100px; 
+    gap: 15px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.encabezado{
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* --- Columna Derecha: Resumen de Pago --- */
+.total-pagar {
+    flex-grow: 1;
+    background-color: #ffe5d9; 
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: fit-content; 
+    margin-left: auto;
+}
+
+.aplicar-cupon {
+    background-color: #6a0dad; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.boton-pagar, .boton-vaciar {
+    background-color: #6a0dad; 
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+/* Media Query para responsividad en celulares y tablets */
+@media (max-width: 768px) {
+    .cart-container {
+        flex-direction: column; 
+    }
+
+    .product-item {
+        flex-wrap: wrap; 
+    }
 }
