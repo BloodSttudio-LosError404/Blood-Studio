@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu carrito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="Cart.css">
+</head>
+
+<body>
+    <header class="header-principal">
+        <div class="header-contenido">
+
+            <!-- LOGO -->
+            <div class="logo-container">
+                <a href="#">
+                    <img src="/src/images/logo.jpeg" alt="Logo" class="logo-img">
+                </a>
+            </div>
+
+            <!-- NAV -->
+            <nav class="nav-principal">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                    <li><a href="#">Visualizador</a></li>
+                </ul>
+            </nav>
+
+            <!-- BUSCADOR -->
+            <div class="contenedor-buscador">
+                <input type="text" placeholder="¿Qué estás buscando?">
+                <button>🔍</button>
+            </div>
+
+            <!-- ICONOS -->
+            <div class="iconos-acciones">
+                <a href="#">👤</a>
+                <a href="#">🤍</a>
+                <a href="#">🛍️</a>
+            </div>
+
+            <!-- BOTÓN MENÚ MÓVIL -->
+            <button class="barras" aria-label="Abrir menú"></button>
+
+        </div>
+    </header>
+    <main>
+        <h1 class="caja-degradado">Tu carrito</h1>
+        <div class="carrito">
+            <section class="lista-productos">
+                <div claas="encabezado">
+                    <span class="encabezado-producto">Producto</span>
+                    <span clas="encabezado-precio">Precio</span>
+                    <span class="encabezado-cantidadantidad">Cantidad</span>
+                    <span class="encabezdo-subtotal">Subtotal</span>
+                </div>
+
+                <!---Productos-->
+                <!-- El contenedor donde JS inyectará los items dinámicos -->
+                <div id="product-items-container">
+                    <!-- Los productos generados por JS aparecerán aquí -->
+                </div>
+
+            </section>
+            <section class="total-pagar">
+                <h3>Total</h3>
+                <div class="detalles-pago">
+                    <p>Subtotal: <span>$00.00</span></p>
+                    <p>Envío: <span>$00.00</span></p>
+                    <p>Total: <span>$00.00</span></p>
+                </div>
+                <div class="cupon">
+                    <input type="text" placeholder="Cupón">
+                    <button class="aplicar-cupon">Aplicar</button>
+                </div>
+                <button class="boton-pagar">Pagar</button>
+                <button class="boton-vaciar">Vaciar Carrito</button>
+            </section>
+        </div>
+        <section>
+            <h2 class="caja-degradado">Te podría interesar</h2>
+
+        </section>
+
+
+
+    </main>
+    <footer></footer>
+</body>
+
+</html>

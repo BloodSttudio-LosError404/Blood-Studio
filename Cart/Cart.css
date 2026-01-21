@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Figtree", sans-serif;
+  background-color: #faf8ff;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+.header-principal {
+  background-color: #F9F7FF;
+  border-bottom: 1px solid #D9D9D9;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.header-contenido {
+  width: 100%;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/* LOGO */
+.logo-img {
+  height: 65px;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+}
+
+/* NAV */
+.nav-principal ul {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-principal a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-principal a:hover {
+  color: #4C3C68;
+}
+
+/* BUSCADOR */
+.contenedor-buscador {
+  display: flex;
+  align-items: center;
+}
+
+.contenedor-buscador input {
+  border: 1px solid #ced4da;
+  padding: 8px 14px;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+}
+
+.contenedor-buscador button {
+  border: none;
+  background-color: #4C3C68;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+}
+
+/* ICONOS */
+.iconos-acciones {
+  display: flex;
+  gap: 20px;
+  font-size: 1.4rem;
+}
+
+.iconos-acciones a {
+  text-decoration: none;
+  color: #4C3C68;
+}
+
+/* BOTÓN HAMBURGUESA */
+.barras {
+  display: none;
+  background-image: url('./../src/images/icono-menu.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+
+  .nav-principal,
+  .contenedor-buscador {
+    display: none;
+  }
+
+  .barras {
+    display: block;
+  }
+
+  .header-principal {
+    height: 80px;
+  }
+
+  .logo-img {
+    height: 45px;
+  }
+
+  .iconos-acciones {
+    gap: 12px;
+    font-size: 1.2rem;
+  }
+}
+
+/* TÍTULO */
+.caja-degradado {
+  background: linear-gradient(to right, #c2b1e5, #ffcab3);
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* Contenedores*/
+
+/* Estilos de la lista de productos */
+.lista-productos {
+  
+    flex-grow: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-right: auto;
+}
+
+.encabezado {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  list-style: none;
+  padding: 0;
+}
+
+
+/* Estilos del resumen del pedido */
+.carrito {
+    display: flex;
+}
+
+/* Encabezados de la tabla (usando Grid para alineación) */
+.encabezado {
+    display: grid;
+    /* Define 5 columnas con tamaños relativos */
+    grid-template-columns: 100px 1fr 100px 100px 100px; 
+    gap: 15px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.encabezado{
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* --- Columna Derecha: Resumen de Pago --- */
+.total-pagar {
+    flex-grow: 1;
+    background-color: #ffe5d9; 
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: fit-content; 
+    margin-left: auto;
+}
+
+.aplicar-cupon {
+    background-color: #6a0dad; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.boton-pagar, .boton-vaciar {
+    background-color: #6a0dad; 
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+/* Media Query para responsividad en celulares y tablets */
+@media (max-width: 768px) {
+    .cart-container {
+        flex-direction: column; 
+    }
+
+    .product-item {
+        flex-wrap: wrap; 
+    }
+}

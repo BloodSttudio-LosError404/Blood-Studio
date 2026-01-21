@@ -113,7 +113,7 @@ body {
 /* ===== HAMBURGUESA ===== */
 .barras {
   display: none;
-  background-image: url('../src/images/icono-menu.jpeg');
+  background-image: url('./../src/images/icono-menu.jpeg');
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
