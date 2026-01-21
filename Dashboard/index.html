@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bloom Studio Dashboard</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Material+Icons+Round" rel="stylesheet"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./Style.css">
+</head>
+
+<body>
+
+<button class="menu-btn" id="menuBtn">
+  <span class="material-icons-round">menu</span>
+</button>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <nav>
+      <a href="#"><span class="material-icons-round">home</span></a>
+      <a href="#"><span class="material-icons-round">shopping_cart</span></a>
+      <a href="#"><span class="material-icons-round">insert_chart</span></a>
+      <a href="#"><span class="material-icons-round">dashboard</span></a>
+      <a href="#"><span class="material-icons-round">notifications</span></a>
+      <a href="#"><span class="material-icons-round">settings</span></a>
+    </nav>
+    <a href="#"><span class="material-icons-round">logout</span></a>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <header class="header">
+      <div class="user">
+        <div class="avatar"></div>
+        <div>
+          <small>Hola, Any</small>
+          <h2>Bienvenida de nuevo</h2>
+        </div>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Buscar..." />
+        <span class="material-icons-round">search</span>
+      </div>
+    </header>
+
+    <section class="cards">
+      <div class="card">
+        <div class="icon-box green">
+          <span class="material-icons-round">check_circle</span>
+        </div>
+        <div>
+          <small>Completadas</small>
+          <h3>20,000</h3>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon-box blue">
+          <span class="material-icons-round">hourglass_empty</span>
+        </div>
+        <div>
+          <small>Pendientes</small>
+          <h3>100</h3>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon-box pink">
+          <span class="material-icons-round">cancel</span>
+        </div>
+        <div>
+          <small>Canceladas</small>
+          <h3>32</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="table-box">
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Estatus</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sudadera</td>
+            <td>1x</td>
+            <td><span class="badge paid">Pagado</span></td>
+            <td>01/01/26</td>
+            <td>15:30</td>
+          </tr>
+          <tr>
+            <td>Taza</td>
+            <td>2x</td>
+            <td><span class="badge pending">Pendiente</span></td>
+            <td>03/01/26</td>
+            <td>14:20</td>
+          </tr>
+          <tr>
+            <td>Termo</td>
+            <td>1x</td>
+            <td><span class="badge cancel">Cancelado</span></td>
+            <td>08/01/26</td>
+            <td>20:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
