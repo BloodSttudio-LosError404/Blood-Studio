@@ -188,7 +188,7 @@ body {
 .carrito {
     display: flex;
     gap: 20px;
-    aling-items: flex-start;
+    align-items: flex-start;
     padding: 20px
 
 }
@@ -205,12 +205,7 @@ body {
     height: fit-content; 
 }
 
-.encabezado {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-  list-style: none;
-  padding: 0;
-}
+
 /* Encabezados de la tabla (usando Grid para alineación) */
 .lista-productos.encabezado {
     display: grid;
@@ -218,7 +213,6 @@ body {
     grid-template-columns: 100px 1fr 100px 100px 100px; 
     width: 100%;
     padding-bottom: 10px;
-    border-bottom: 2px solid #333;
     margin-bottom: 15px;
     font-weight: bold;
     gap: 15px;
@@ -226,19 +220,14 @@ body {
     padding: 10px 0;
 }
 
-.encabezado{
-    font-weight: bold;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 10px;
-}
 
 /* Columna derecha resumen de pago  */
 .total-pagar {
     flex: 1;
     display:flex;
     flex-direction:column;
-    aling-items: center;
-    text-aling: center;
+    align-items: center;
+    text-align: center;
     background-color: #ffd5c2; 
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
