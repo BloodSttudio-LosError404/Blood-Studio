@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+.login-page {
+    padding: 40px 16px;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
