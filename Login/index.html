@@ -12,8 +12,38 @@
 <body>
 
     <div id="appHeader"></div>
+    <main class="login-page">
+
+        <div class="login-card">
+
+            <h1 class="login-title">Login</h1>
+            <form class="login-form" novalidate>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+                <a href="#" class="forgot-password">Forgot password?</a>
+
+                <button type="submit" class="login-button">
+                    Iniciar sesión
+                </button>
+
+                <p class="create-account">
+                    <a href="register.html">Crear cuenta</a>
+                </p>
+
+            </form>
+
+
+        </div>
+
+
+    </main>
 
     <div id="appFooter"></div>
+
+    <script type="module" src="./mainLogin.js"></script>
 </body>
 
 </html>
