@@ -18,3 +18,16 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   background: linear-gradient(135deg, #f2b6a7, #b9a7e6);
 }
+
+.login-title {
+  margin: 0 0 28px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
