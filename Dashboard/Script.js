@@ -11,3 +11,24 @@ overlay.addEventListener('click', () => {
   sidebar.classList.remove('open');
   overlay.classList.remove('show');
 });
+
+const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Sudaderas', 'Tazas', 'Playeras', 'Termos'],
+      datasets: [{
+        label: 'No. de ventas',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 5
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: false
+        }
+      }
+    }
+  });
