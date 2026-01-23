@@ -188,7 +188,7 @@ body {
 .carrito {
     display: flex;
     gap: 20px;
-    aling-items: flex-start;
+    align-items: flex-start;
     padding: 20px
 
 }
@@ -197,48 +197,47 @@ body {
 .lista-productos {
   
     flex: 3;
+    flex-direction:column;
     background: #faf8ff;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin-right: auto;
     height: fit-content; 
+    
 }
 
-.encabezado {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-  list-style: none;
-  padding: 0;
-}
+
 /* Encabezados de la tabla (usando Grid para alineación) */
-.lista-productos.encabezado {
+.encabezado {
     display: grid;
-    /* Define 5 columnas con tamaños relativos */
-    grid-template-columns: 100px 1fr 100px 100px 100px; 
+    /* Define 5 columnas con tamaños relativos */ 
+    grid-template-columns: 100px 100px 100px 100px 100px;
     width: 100%;
+    justify-content: space-between;
     padding-bottom: 10px;
-    border-bottom: 2px solid #333;
     margin-bottom: 15px;
-    font-weight: bold;
     gap: 15px;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px;
 }
 
-.encabezado{
-    font-weight: bold;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 10px;
+
+.encabezado.span{
+  flex:1;
+  text-align: center;
+
 }
+
+
 
 /* Columna derecha resumen de pago  */
 .total-pagar {
     flex: 1;
     display:flex;
     flex-direction:column;
-    aling-items: center;
-    text-aling: center;
+    align-items: center;
+    text-align: center;
     background-color: #ffd5c2; 
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -262,7 +261,7 @@ body {
     width: 100%;
     margin-top: 10px;
     cursor: pointer;
-    font-size: 1.1em;
+    
 }
 
 /* Media Query para responsividad en celulares y tablets */
