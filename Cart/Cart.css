@@ -315,7 +315,7 @@ a:hover {
     gap: 15px;
 }
 
-/* ESCRITORIO: 4 productos */
+
 .product-card {
     flex: 0 0 calc(25% - 15px);
     border: 1px solid #eee;
@@ -328,7 +328,7 @@ a:hover {
 .product-card img {
     width: 100%;
     height: 180px;
-    object-fit: contain; /* Para que las playeras no se corten */
+    object-fit: contain; 
     background: #f9f9f9;
     border-radius: 8px;
 }
@@ -354,15 +354,15 @@ a:hover {
 /* FOOTER: Precio y Rating en la misma línea */
 .card-footer {
     display: flex;
-    justify-content: space-between; /* Uno a la izquierda, otro a la derecha */
+    justify-content: space-between; 
     align-items: center;
     margin-top: 10px;
 }
 
 /* Burbuja del Precio */
 .price-badge {
-    background-color: #e9f5ee; /* Verde muy claro */
-    color: #2d7a4d;           /* Verde oscuro */
+    background-color: #e9f5ee; 
+    color: #2d7a4d;           
     border: 1px solid #c2e0d1;
     padding: 4px 12px;
     border-radius: 6px;
