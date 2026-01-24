@@ -69,6 +69,7 @@
         <h1 class="caja-degradado">Tu carrito</h1>
         <div class="carrito">
             <section class="lista-productos">
+                <p id = "carrito-vacio"> No tienes artículos por el momento. <a href ="agregar el link de la pagina producto individual">¿Quieres agregar algunos?</a> </p>
                 <div class="encabezado">
                     <span class="encabezado-producto">Producto</span>
                     <span class="encabezado-precio">Precio</span>
@@ -86,16 +87,16 @@
             <section class="total-pagar">
                 <h3>Total</h3>
                 <div class="detalles-pago">
-                    <p>Subtotal: <span>$00.00</span></p>
-                    <p>Envío: <span>$00.00</span></p>
-                    <p>Total: <span>$00.00</span></p>
+                    <p>Subtotal: <span id="unidades">$00.00</span></p>
+                    <p>Envío: <span id="envio">$00.00</span></p>
+                    <p>Total: <span id="precio">$00.00</span></p>
                 </div>
                 <div class="cupon">
                     <input type="text" placeholder="Cupón">
                     <button class="aplicar-cupon">Aplicar</button>
                 </div>
                 <button class="boton-pagar">Pagar</button>
-                <button class="boton-vaciar">Vaciar Carrito</button>
+                <button id="vaciar" class="boton-vaciar">Vaciar Carrito</button>
             </section>
         </div>
         <section>

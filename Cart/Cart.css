@@ -228,8 +228,32 @@ body {
   text-align: center;
 
 }
+.cart-container{
+  width:500px;
+  
+}
 
+.tarjeta-producto{
+  display:flex;
+  gap: 20px;
+  align-items: center;
+}
+ .tarjeta-producto img{
+  height: 100px;
+  aspect-ratio: 1.5;
+ }
+ .tarjeta-producto h3{
+  width: 130px;
+ }
 
+ #carrito-vacio{
+   text-align: center;
+
+ }
+
+ .escondido {
+  display:none;
+ }
 
 /* Columna derecha resumen de pago  */
 .total-pagar {
