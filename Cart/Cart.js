@@ -1,83 +1,111 @@
-const contenedorTarjetas = document.getElementById("cart-container");
-const unidadesElement = document.getElementById("unidades");
-const precioElement = document.getElementById("precio");
+// 1. SELECCIÓN DE ELEMENTOS
+const contenedorTarjetas = document.getElementById("product-items-container");
+const unidadesElement = document.getElementById("unidades"); // Subtotal
 const envioElement = document.getElementById("envio");
+const precioElement = document.getElementById("precio"); // Total final
 const carritoVacioElement = document.getElementById("carrito-vacio");
-const totalesElement = document.getElementById("totales");
 const vaciarCarritoElement = document.getElementById("vaciar");
+const inputCupon = document.querySelector(".cupon input");
+const botonCupon = document.querySelector(".aplicar-cupon");
 
+// 2. CONFIGURACIÓN DE CUPONES (Let porque el valor cambia)
+const CUPONES_VALIDOS = {
+    "BLOOM10": 0.10,
+    "VERANO5": 0.05
+
+};
+let descuentoAplicado = 0; 
+
+// 3. RENDERIZAR PRODUCTOS
 function crearTarjetasProductosCarrito() {
     contenedorTarjetas.innerHTML = "";
-    const productos = JSON.parse(localStorage.getItem("Articulos"));
-    console.log(productos);
-    if (productos && productos.length > 0) {
+    const productos = JSON.parse(localStorage.getItem("Articulos")) || [];
+
+    if (productos.length > 0) {
+        carritoVacioElement.classList.add("escondido");
+
         productos.forEach((producto) => {
             const nuevoProducto = document.createElement("div");
             nuevoProducto.classList = "tarjeta-producto";
             nuevoProducto.innerHTML = `
-    /* por definir */<img src="./img/productos/${producto.id}.jpg" alt="Producto 1">
-    <h3>${producto.nombre}</h3>
-    <p>$${producto.precio}</p>
-    <div>
-    <button>-</button>
-    <span class="cantidad">${producto.cantidad}</span>
-    <button>+</button>
-    </div>
-    `;
+                <img src="./img/productos/${producto.id}.jpg" alt="${producto.nombre}">
+                <h3>${producto.nombre}</h3>
+                <p>$${producto.precio}</p>
+                <div>
+                    <button class="btn-restar">-</button>
+                    <span class="cantidad">${producto.cantidad}</span>
+                    <button class="btn-sumar">+</button>
+                </div>
+            `;
             contenedorTarjetas.appendChild(nuevoProducto);
-            nuevoProducto
-                .getElementsByTagName("button")[1]
-                .addEventListener("click", (e) => {
-                    agregarAlCarrito(producto);
-                    const cuantaElement =e.target.parentElementByTagName("span")[0];
-                    cuentaCarritoElement.innerText = agregarAlCarrito(producto);
-                    actualizarTotales();
+
+            // Eventos
+            nuevoProducto.querySelector(".btn-sumar").addEventListener("click", () => cambiarCantidad(producto.id, 1));
+            nuevoProducto.querySelector(".btn-restar").addEventListener("click", () => cambiarCantidad(producto.id, -1));
         });
-            nuevoProducto
-                .getElementsByTagName("button")[0]
-                .addEventListener("click", (e) => restarAlCarrito(producto))
-                crearTarjetasProductosCarrito();
-                actualizarTotales();
-                
-                
-        });
-
+    } else {
+        carritoVacioElement.classList.remove("escondido");
     }
-
-}
-crearTarjetasProductosCarrito();
-actualizarTotales();
-
-function actualizarTotales(){
-    const productos = JSON.parse(localStorage.getItem("Articulos"));
-    let unidades =0;
-    let precio =0;
-    if(productos && productos.lengt>0){
-        productos.forEach(producto =>{
-            unidades += producto.cantidad;
-            precio += (producto.precio * producto.cantidad)+ envio;
-
-        })
-        unidadesElement.innerText = unidades;
-        
-        precioElement.innerText = precio;
-    }
-}
-
-function revisarMeensajeVacio(){
-    const productos = JSON.parse(localStorage.getItem("Articulos"));
-    carritoVacioElement.classList.toggle("escondido",productos && productos.length>0);
-    totales.classList.toggle("escondido",!(productos && productos.length>0));
-}
-revisarMeensajeVacio();
-
-vaciarCarritoElement.addEventListener("click", vaciarCarrito);
-function vaciarCarrito(){
-    localStorage.removeItem("Articulos");
     actualizarTotales();
-    crearTarjetasProductosCarrito();
-
 }
+
+// 4. CAMBIAR CANTIDAD
+function cambiarCantidad(id, cambio) {
+    let productos = JSON.parse(localStorage.getItem("Articulos")) || [];
+    const indice = productos.findIndex(p => p.id === id);
+
+    if (indice !== -1) {
+        productos[indice].cantidad += cambio;
+        if (productos[indice].cantidad <= 0) {
+            productos.splice(indice, 1);
+        }
+        localStorage.setItem("Articulos", JSON.stringify(productos));
+        crearTarjetasProductosCarrito();
+    }
+}
+
+// 5. ACTUALIZAR TOTALES
+function actualizarTotales() {
+    const productos = JSON.parse(localStorage.getItem("Articulos")) || [];
+    let subtotal = 0;
+    let costoEnvio = productos.length > 0 ? 100 : 0; 
+
+    productos.forEach(p => {
+        subtotal += (p.precio * p.cantidad);
+    });
+
+    let ahorro = subtotal * descuentoAplicado;
+    let totalFinal = subtotal - ahorro + costoEnvio;
+
+    // Inyectar en HTML (usando toFixed para centavos)
+    unidadesElement.innerText = `$${subtotal.toFixed(2)}`;
+    envioElement.innerText = `$${costoEnvio.toFixed(2)}`;
+    precioElement.innerText = `$${totalFinal.toFixed(2)}`;
+}
+
+// 6. BOTÓN CUPÓN
+botonCupon.addEventListener("click", () => {
+    const codigo = inputCupon.value.trim().toUpperCase();
+    if (CUPONES_VALIDOS[codigo]) {
+        descuentoAplicado = CUPONES_VALIDOS[codigo];
+        alert("¡Cupón aplicado!");
+    } else {
+        descuentoAplicado = 0;
+        alert("Código no válido");
+    }
+    actualizarTotales();
+});
+
+// 7. VACIAR TODO
+vaciarCarritoElement.addEventListener("click", () => {
+    localStorage.removeItem("Articulos");
+    descuentoAplicado = 0;
+    inputCupon.value = "";
+    crearTarjetasProductosCarrito();
+});
+
+// Inicializar
+crearTarjetasProductosCarrito();
 
 // Para agregar productos al carrito y que se muetsren en el header
 const cuentaCarritoElement = document.getElementById("Cuesta carrito");
