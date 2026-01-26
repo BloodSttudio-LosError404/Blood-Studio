@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="Contact.css">
+
+</head>
+
+<body>
+     <header class="header-principal">
+    <div class="header-contenido">
+
+      <!-- LOGO -->
+      <div class="logo-container">
+        <a href="#">
+          <img src="../src/images/logo.jpeg" alt="Logo" class="logo-img">
+        </a>
+      </div>
+
+      <!-- NAV DESKTOP -->
+      <nav class="nav-principal">
+        <ul>
+          <li><a href="/Home.html">Inicio</a></li>
+          <li><a href="/AboutUs/AboutUs.html">Sobre Nosotros</a></li>
+          <li><a href="/Shop/shop.html">Tienda</a></li>
+          <li><a href="/Contact/Contact.html">Contáctanos</a></li>
+          <li><a href="#">Visualizador</a></li>
+        </ul>
+      </nav>
+
+      <!-- BUSCADOR -->
+      <div class="contenedor-buscador">
+        <input type="text" placeholder="¿Qué estás buscando?">
+        <button>
+          <span class="material-symbols-outlined">search</span>
+        </button>
+      </div>
+
+      <!-- ICONOS -->
+      <div class="iconos-acciones">
+        <span class="material-symbols-outlined">account_circle</span>
+        <span class="material-symbols-outlined">favorite</span>
+        <span class="material-symbols-outlined">shopping_cart<span id="cuenta-carrito">0</span></span>
+      </div>
+
+      <!-- BOTÓN HAMBURGUESA -->
+      <button class="barras" aria-label="Abrir menú"></button>
+
+    </div>
+  </header>
+
+  <!-- MENÚ MÓVIL -->
+  <nav class="desplegable">
+    <ul>
+        <li><a href="/Home.html">Inicio</a></li>
+        <li><a href="/AboutUs/AboutUs.html">Sobre Nosotros</a></li>
+        <li><a href="/Shop/shop.html">Tienda</a></li>
+        <li><a href="/Contact/Contact.html">Contáctanos</a></li>
+        <li><a href="#">Visualizador</a></li>
+    </ul>
+  </nav>
+    <main>
+        <h1 class="caja-degradado">Contacto</h1>
+
+        <div class="contenedor-tarjetas">
+            <div class="tarjeta color-1">
+                <h3>Correo</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-envelope-at" viewBox="0 0 16 16">
+                    <path
+                        d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z" />
+                    <path
+                        d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                </svg>
+                <p> info@bloomstudio.com</p>
+            </div>
+            <div class="tarjeta color-2">
+                <h3>Teléfono</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path
+                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                </svg>
+                <p>555-555-555</p>
+            </div>
+            <div class="tarjeta color-3">
+                <h3>Ubicación</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+                <a
+                    href="https://www.google.com/maps/place/Aeropuerto+Internacional+de+la+Ciudad+de+M%C3%A9xico/@19.4289855,-99.0905069,15z/data=!3m1!4b1!4m6!3m5!1s0x85d1fc77bd93229f:0x2d07ef561bad244!8m2!3d19.4360762!4d-99.0719083!16zL20vMHBnOHM?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D ">México</a>
+
+            </div>
+        </div>
+        <section class="seccion-contacto container my-5">
+
+            <section class="contacto-layout">
+
+                <!-- COLUMNA IZQUIERDA -->
+                <div class="contacto-info">
+                    <img src="image/contatco.jpg" alt="Imagen de contacto" class="imagen-contacto">
+
+                    <p class="descripcion-contacto">
+                        En Bloom Studio estamos listos para ayudarte con pedidos, cotizaciones
+                        o cualquier consulta sobre nuestros productos y servicios.
+                    </p>
+                </div>
+
+                <!-- COLUMNA DERECHA -->
+                <form class="form-contac" action="https://formsubmit.co/moralesmedinanayeli@gmail.com" method="post">
+
+                    <h2>Pedido, cotización o consulta</h2>
+
+                    <div class="form-group">
+                        <label for="tipo">Tipo de consulta</label>
+                        <input type="text" id="tipo" name="tipoConsulta" placeholder="cotización" required>
+                    </div>
+
+                    <h3>Información personal</h3>
+
+                    <fieldset>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" id="apellido" name="apellido" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telefono">Teléfono</label>
+                                <input type="text" id="telefono" name="telefono" required>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="boton-enviar">
+                        Enviar
+                    </button>
+
+                </form>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white pt-5">
+        <div class="container">
+            <div class="row text-center text-md-start">
+
+                <!-- LOGO -->
+                <div class="col-12 col-md-4 mb-4">
+                    <h2 class="fw-bold">BLOOM<br>STUDIO</h2>
+                    <div class="social-icons d-flex justify-content-center justify-content-md-start gap-3 mt-3">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+
+                <!-- COMPAÑÍA / RECURSOS -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <h5 class="fw-bold">COMPAÑÍA</h5>
+                            <ul class="list-unstyled footer-list">
+                                <li><a href="/Home.html">Inicio</a></li>
+                                <li><a href="/AboutUs/AboutUs.html">Sobre nosotros</a></li>
+                                <li><a href="/Shop/shop.html">Tienda</a></li>
+                                <li><a href="/Contact/Contact.html">Contáctanos</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6">
+                            <h5 class="fw-bold">RECURSOS</h5>
+                            <ul class="list-unstyled footer-list">
+                                <li><a href="#">Spotify Playlist</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Youtube Playlist</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTACTO -->
+                <div class="col-12 col-md-4 mb-4 text-center text-md-end">
+
+                    <div class="d-flex justify-content-center justify-content-md-end align-items-center mb-3 me-2">
+                        <div>
+                            <small>Tel</small><br>
+                            555-555-5555
+                        </div>
+                        <span class="material-symbols-outlined ms-2">phone</span>
+                    </div>
+
+                    <div class="d-flex justify-content-center justify-content-md-end align-items-center mb-3">
+                        <div>
+                            <small>Mail</small><br>
+                            info@bloomstudio.com
+                        </div>
+                        <span class="material-symbols-outlined ms-2">mail</span>
+                    </div>
+
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3 mt-3">
+                        <i class="fa-brands fa-cc-visa fa-2x"></i>
+                        <i class="fa-brands fa-cc-mastercard fa-2x"></i>
+                        <i class="fa-brands fa-paypal fa-2x"></i>
+                        <i class="fa-brands fa-cc-apple-pay fa-2x"></i>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Barra inferior del footer -->
+        <div class="footer-bottom py-3">
+            <div class="container">
+                <div class="row align-items-center text-center text-md-start">
+
+                    <!-- Links legales -->
+                    <div class="col-12 col-md-8 mb-2 mb-md-0">
+                        <div
+                            class="d-flex flex-column flex-md-row justify-content-center justify-content-md-start gap-3 small">
+                            <a href="#" class="footer-link">Privacidad</a>
+                            <a href="#" class="footer-link">Términos y condiciones</a>
+                        </div>
+                    </div>
+
+                    <!-- Copyright -->
+                    <div class="col-12 col-md-4 text-md-end">
+                        <p class="small mb-0 footer-copy">
+                            &copy; 2025, Todos los derechos reservados a <strong>Bloom Studio</strong>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+    <script src="../src/ScriptHeader/script.js"></script>
+
+</body>
+
+</html>
