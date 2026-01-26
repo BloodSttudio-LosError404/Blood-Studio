@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - Mi E-commerce</title>
+    <link rel="stylesheet" href="/Administrator/Admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <h1>Panel de Administración</h1>
+            <nav>
+                <a href="index.html">Ver Tienda</a>
+                <button id="logoutBtn">Cerrar Sesión</button>
+            </nav>
+        </header>
+
+        <main class="admin-main">
+            <!-- Formulario para agregar productos -->
+            <section class="product-form-section">
+                <h2>Agregar Nuevo Producto</h2>
+                <form id="productForm" class="product-form">
+                    <div class="form-group">
+                        <label for="productName">Nombre del Producto *</label>
+                        <input type="text" id="productName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="productDescription">Descripción *</label>
+                        <textarea id="productDescription" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="productPrice">Precio ($) *</label>
+                        <input type="number" id="productPrice" step="0.01" min="0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="productCategory">Categoría *</label>
+                        <select id="productCategory" required>
+                            <option value="">Seleccionar categoría</option>
+                            <option value="electronica">Electrónica</option>
+                            <option value="ropa">Ropa</option>
+                            <option value="hogar">Hogar</option>
+                            <option value="deportes">Deportes</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="productStock">Stock Disponible *</label>
+                        <input type="number" id="productStock" min="0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="productImage">URL de la Imagen</label>
+                        <input type="text" id="productImage" placeholder="https://ejemplo.com/imagen.jpg">
+                        <small>O sube una imagen para obtener un enlace temporal</small>
+                        <input type="file" id="imageUpload" accept="image/*">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="productSKU">SKU (Código único)</label>
+                        <input type="text" id="productSKU" placeholder="Ej: PROD-001">
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Guardar Producto</button>
+                        <button type="reset" class="btn btn-secondary">Limpiar Formulario</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Lista de productos existentes -->
+            <section class="products-list-section">
+                <h2>Productos Existentes</h2>
+                <div id="productsList" class="products-grid">
+                    <!-- Los productos se cargarán aquí dinámicamente -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="admin-footer">
+            <p>Panel de Administración © 2024</p>
+        </footer>
+    </div>
+
+    <!-- Modal para editar productos -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Editar Producto</h3>
+            <form id="editProductForm">
+                <!-- Los campos se llenarán dinámicamente -->
+            </form>
+        </div>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
