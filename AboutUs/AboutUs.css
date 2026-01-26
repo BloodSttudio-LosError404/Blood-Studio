@@ -190,12 +190,12 @@ body {
 /* CONTENEDOR PRINCIPAL */
 .sobre-nosotros {
   display: grid;
-  grid-template-columns: 1fr 1.3fr;
+  grid-template-columns: 1fr 2fr;
   gap: 2rem;
 
   max-width: 100%;
   padding: 0 5%;
-  padding-right: 10%;
+  padding-right: 5%;
   margin: 3rem 0;
 
   align-items: start; 
@@ -408,7 +408,7 @@ body {
   align-items: center
 }
 .icon {
-  width: 110px;
+  width: 50%;
   height: auto;
 }
 
@@ -445,14 +445,12 @@ body {
   max-width: 100%;
 }
 
-/* IMAGEN DE ATRÁS */
 .img-back {
   width: 100%;
   border-radius: 16px;
   display: block;
 }
 
-/* IMAGEN DE FRENTE (flotante) */
 .img-front {
   position: absolute;
   bottom: -40px;
