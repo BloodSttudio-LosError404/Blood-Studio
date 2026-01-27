@@ -29,6 +29,8 @@
           <li><a href="/Shop/shop.html">Tienda</a></li>
           <li><a href="/Contact/Contact.html">Contáctanos</a></li>
           <li><a href="#">Visualizador</a></li>
+          
+          
         </ul>
       </nav>
 
@@ -40,11 +42,13 @@
         </button>
       </div>
 
-      <!-- ICONOS -->
+      <!-- ICONOS --> 
       <div class="iconos-acciones">
         <span class="material-symbols-outlined">account_circle</span>
         <span class="material-symbols-outlined">favorite</span>
-        <span class="material-symbols-outlined">shopping_cart<span id="cuenta-carrito">0</span></span>
+      <!-- Modificación aquí para pasar al carrito -->
+        <a href="/Cart/Cart.html" style="text-decoration: none; color: inherit; position: relative;"> <span class="material-symbols-outlined">shopping_cart</span><span id="cuenta-carrito">0</span></a>
+      
       </div>
 
       <!-- BOTÓN HAMBURGUESA -->
@@ -65,17 +69,18 @@
   </nav>
   
 
+ <!--Aqui empieza el contenido principal de la página -->
 
      <main class="container">
         <section class="product-view">
             <div class="gallery">
                 <div class="thumbnails">
-                    <img src="/img/Catalogo/Temporada14febrero/raspadito del amor.png" alt="mini">
-                    <img src="/img/Catalogo/Temporada14febrero/caja-personalizada.png" alt="mini">
-                    <img src="/img/Catalogo/Temporada14febrero/UnoEnPareja.png" alt="mini">
+                    <img src="/src/images/products/temporada-14-febrero/temporada-001.png" alt="mini">
+                    <img src="/src/images/products/temporada-14-febrero/temporada-002.png" alt="mini">
+                    <img src="/src/images/products/temporada-14-febrero/temporada-003.png" alt="mini">
                 </div>
                 <div class="main-image">
-                    <img src="/img/Catalogo/Sudaderas/DuoTomJerry.png" alt="Dou">
+                    <img src="/src/images/products/temporada-14-febrero/temporada-009.JPG" alt="Dou">
                 </div>
             </div>
 
@@ -85,20 +90,19 @@
                 <div class="rating">★★★★★</div>
                 
                 <h3>Color</h3>
-                <div class="color-options">
-                    <span class="dot black"></span>
-                    <span class="dot white"></span>
-                    <span class="dot gray"></span>
+                <div class="color-options" id="color-selector">
+                    <span class="dot black" data-color="Negro"></span>
+                    <span class="dot white" data-color="Blanco"></span>
+                    <span class="dot gray" data-color="Gris"></span>
                 </div>
                 <div class="actions">
-                    <button class="btn-secondary">Añadir al carrito</button>
-                    <button class="btn-primary">Comprar ahora</button>
+                    <button id="btn-add-to-cart" class="btn-secondary">Añadir al carrito</button>
                 </div>
                 
-                <div class="size-options">
-                    <span class="pill">S</span>
-                    <span class="pill">M</span>
-                    <span class="pill">L</span>
+                <div class="size-options" id="size-selector">
+                    <span class="pill" data-size="S">S</span>
+                    <span class="pill" data-size="M">M</span>
+                    <span class="pill" data-size="L">L</span>
                 </div>
             </div>
         </section>
@@ -133,40 +137,39 @@
         
         <div class="product-card">
             <div class="card-img">
-                <img src="/img/Catalogo/Tags/IMG_4764.PNG" alt="Tag">
+                <img src="/src/images/products/tags/tag-001.PNG" alt="Tag">
             </div>
             <div class="card-info">
                 <h4>Tag de labial para maestros</h4>
                 <p class="card-price">$50.00</p>
-                <div class="card-rating">⭐ 4.8 (20 Reviews)</div>
+                
             </div>
         </div>
 
         <div class="product-card">
             <div class="card-img">
-                <img src="/img/Catalogo/Servicios digitales/IMG_4863.PNG" alt="Invitaciones digitales">
+                <img src="/src/images/products/servicios-digitales/servicio-002.PNG" alt="Invitaciones digitales">
             </div>
             <div class="card-info">
                 <h4>Invitaciones digitales</h4>
                 <p class="card-price">$450.00</p>
-                <div class="card-rating">⭐ 4.9 (15 Reviews)</div>
+                
             </div>
         </div>
 
         <div class="product-card">
             <div class="card-img">
-                <img src="/img/Catalogo/Vasos/Vaso Magico/Magico2.png" alt="Vaso magico">
+                <img src="/src/images/products/vasos/vasos-016.jpg" alt="Vaso magico">
             </div>
             <div class="card-info">
                 <h4>Vaso magico personalizado</h4>
                 <p class="card-price">$69.00</p>
-                <div class="card-rating">⭐ 4.7 (10 Reviews)</div>
             </div>
         </div>
 
         <div class="product-card">
             <div class="card-img">
-                <img src="/img/Catalogo/StickersEtiquetasAdhesivas/VinilNomMetalico.PNG" alt="Sudadera 4">
+                <img src="/src/images/products/stickers-etiquetas/sticker-013.JPG" alt="Sudadera 4">
             </div>
             <div class="card-info">
                 <h4>Paq 10 stikers con nombres</h4>
@@ -174,7 +177,6 @@
                     <span class="dot-s gray"></span><span class="dot-s black"></span>
                 </div>
                 <p class="card-price">$99.00</p>
-                <div class="card-rating">⭐ 5.0 (5 Reviews)</div>
             </div>
         </div>
 
@@ -268,7 +270,13 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+      </script>
+
+      <script src="../Cart/Cart.js"></script>
+      <script src="./ProductDetail.js"></script>
+
+
         
 </body>
 </html>
