@@ -1,77 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="AboutUs.css">
-    <title>Acerca de nosotros</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="AboutUs.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Acerca de nosotros</title>
 </head>
+
 <body>
-<header class="header-principal">
-  <div class="header-contenido">
+  <header class="header-principal">
+    <div class="header-contenido">
 
-    <!-- LOGO -->
-    <div class="logo-container">
-      <a href="#">
-        <img src="/src/images/logo.jpeg" alt="Logo" class="logo-img">
-      </a>
+      <!-- LOGO -->
+      <div class="logo-container">
+        <a href="#">
+          <img src="../src/images/logo.jpeg" alt="Logo" class="logo-img">
+        </a>
+      </div>
+
+      <!-- NAV DESKTOP -->
+      <nav class="nav-principal">
+        <ul>
+          <li><a href="/Home.html">Inicio</a></li>
+          <li><a href="/AboutUs/AboutUs.html">Sobre Nosotros</a></li>
+          <li><a href="/Shop/shop.html">Tienda</a></li>
+          <li><a href="/Contact/Contact.html">Contáctanos</a></li>
+          <li><a href="#">Visualizador</a></li>
+        </ul>
+      </nav>
+
+      <!-- BUSCADOR -->
+      <div class="contenedor-buscador">
+        <input type="text" placeholder="¿Qué estás buscando?">
+        <button>
+          <span class="material-symbols-outlined">search</span>
+        </button>
+      </div>
+
+      <!-- ICONOS -->
+      <div class="iconos-acciones">
+        <span class="material-symbols-outlined">account_circle</span>
+        <span class="material-symbols-outlined">favorite</span>
+        <span class="material-symbols-outlined">shopping_cart<span id="cuenta-carrito">0</span></span>
+      </div>
+
+      <!-- BOTÓN HAMBURGUESA -->
+      <button class="barras" aria-label="Abrir menú"></button>
+
     </div>
+  </header>
 
-    <!-- NAV -->
-    <nav class="nav-principal">
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Sobre Nosotros</a></li>
-        <li><a href="#">Tienda</a></li>
-        <li><a href="#">Contáctanos</a></li>
-        <li><a href="#">Visualizador</a></li>
-      </ul>
-    </nav>
-
-    <!-- BUSCADOR -->
-    <div class="contenedor-buscador">
-      <input type="text" placeholder="¿Qué estás buscando?">
-      <button>🔍</button>
-    </div>
-
-    <!-- ICONOS -->
-    <div class="iconos-acciones">
-      <a href="#">👤</a>
-      <a href="#">🤍</a>
-      <a href="#">🛍️</a>
-    </div>
-
-    <!-- BOTÓN MENÚ MÓVIL -->
-    <button class="barras" aria-label="Abrir menú"></button>
-
-  </div>
-</header>
+  <!-- MENÚ MÓVIL -->
+  <nav class="desplegable">
+    <ul>
+      <li><a href="/Home.html">Inicio</a></li>
+          <li><a href="/AboutUs/AboutUs.html">Sobre Nosotros</a></li>
+          <li><a href="/Shop/shop.html">Tienda</a></li>
+          <li><a href="/Contact/Contact.html">Contáctanos</a></li>
+          <li><a href="#">Visualizador</a></li>
+    </ul>
+  </nav>
 
   <!-- Sore nosotros -->
-    <div class="titulos-sobre-nosotros">
-        <p class="sobre-nosotros-parrafo">Sobre nosotros</p>
-    </div>
+  <div class="titulos-sobre-nosotros">
+    <p class="sobre-nosotros-parrafo">Sobre nosotros</p>
+  </div>
   <!-- Nuestratienbda -->
-    <div class="sobre-nosotros">
-        <img src="/src/images/tienda.jpg" class="nuestra-tienda">
-        <p class="nuestra-tienda-titulo"> Nuestra tienda </p>
-        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis corporis illo vitae, repellendus dolorum vero quos, totam ipsum voluptatibus eveniet modi tenetur! Quod iure eaque laboriosam maxime sapiente, quibusdam molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nisi eos provident enim porro error minima inventore laboriosam quos assumenda corporis eum doloribus voluptas accusantium, facere, fugit sequi deleniti. Enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos blanditiis adipisci deserunt ad voluptatem molestiae amet animi laudantium suscipit error earum ex similique modi, tempore debitis excepturi mollitia. Itaque, debitis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatibus magnam quas, animi minus illum et, praesentium dignissimos cupiditate nisi reiciendis! Fugit odio nisi accusantium optio nam aut quos ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. In officia ex dolorem? Iusto dolores, quia molestiae facilis consequuntur atque perferendis sed inventore assumenda! Perferendis excepturi explicabo dolore quod soluta nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ab iste. Delectus rerum similique minima dolorem vero laborum, cum perferendis exercitationem atque alias, accusamus aliquid quod numquam reiciendis totam nostrum?</p>
+  <div class="sobre-nosotros">
+    <div class="bloque-imagen">
+      <img src="../src/images/tienda.jpg" alt="Nuestra tienda">
     </div>
+
+    <div class="bloque-texto">
+      <h2 class="nuestra-tienda-titulo">Nuestra tienda</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis corporis illo vitae, repellendus dolorum vero
+        quos, totam ipsum voluptatibus eveniet modi tenetur! Quod iure eaque laboriosam maxime sapiente, quibusdam
+        molestiae.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nisi eos provident enim porro error minima
+        inventore laboriosam quos assumenda corporis eum doloribus voluptas accusantium, facere, fugit sequi deleniti.
+      </p>
+    </div>
+  </div>
 
   <!-- Poque nosotros -->
-    <div>
-        <p class="titulos-sobre-nosotros"> ¿Por qué nosotros? <img src="/src/images/persona.png" class="por-que-nosotros-img"> </p>
-        
-    </div>
+  <div>
+    <p class="titulos-sobre-nosotros"> ¿Por qué nosotros? <img src="../src/images/persona.png"
+        class="por-que-nosotros-img"> </p>
+
+  </div>
   <!-- Nuestra mision y valores  -->
 
-          <!-- ====== MISIÓN ====== -->
+  <!-- ====== MISIÓN ====== -->
   <section class="about-mission">
     <div class="about-mission__container">
 
       <div class="about-mission__text">
-        <h1>Nuestra Misión</h1>
+        <h2>Nuestra Misión</h2>
         <p>
           Nuestra misión es ofrecer productos de alta calidad,
           enfocados en la satisfacción del cliente y en la
@@ -81,18 +112,19 @@
       </div>
 
       <div class="about-mission__image">
-        <img src="/src/images/missionImage.webp" alt="Nuestra misión" class="nuestra-mision">
+        <img src="../src/images/missionImage.webp" alt="Nuestra misión" class="nuestra-mision">
       </div>
 
     </div>
   </section>
+
 
   <!-- ====== VISIÓN ====== -->
   <section class="vision">
     <div class="vision__container">
 
       <div class="vision__image">
-        <img src="/src/images/vissionImage.webp" alt="Nuestra visión" class="nuestra-vision">
+        <img src="../src/images/vissionImage.webp" alt="Nuestra visión" class="nuestra-vision">
       </div>
 
       <div class="vision__content">
@@ -105,119 +137,139 @@
 
     </div>
   </section>
-  
-  
+
+
   <!-- Que nos hace diferentes -->
 
   <!-- productos -->
 
   <!-- Carousel -->
-   
+
   <section class="teamCarousel">
-  <header class="teamCarouselHeader">
-    <h2 class="teamCarouselTitle">Nuestro Equipo</h2>
-  </header>
+    <header class="teamCarouselHeader">
+      <h2 class="teamCarouselTitle">Nuestro Equipo</h2>
+    </header>
 
-  <div class="teamCarouselLayout">
-    <button class="teamBtn" id="prevBtn">‹</button>
+    <div class="teamCarouselLayout">
+      <button class="teamBtn" id="prevBtn">‹</button>
 
-    <div class="teamCarouselRail" id="carouselRail"></div>
+      <div class="teamCarouselRail" id="carouselRail"></div>
 
-    <button class="teamBtn" id="nextBtn">›</button>
-  </div>
+      <button class="teamBtn" id="nextBtn">›</button>
+    </div>
   </section>
 
-<!-- Footer -->
- <footer className="bg-black text-white pt-5">
-      <div className="container pb-4">
-        <div className="row">
-          <!-- Sección Branding -->
-          <div className="col-md-4 mb-4">
-            <h2 className="fw-bold mb-3">BLOOM STUDIO</h2>
-            <p className="text-secondary small">
-              Transformamos tus ideas en productos únicos. En Bloom Studio, la creatividad no tiene límites.
-            </p>
-            <div className="d-flex gap-3 mt-4">
-              <a href="#" className="text-white"><i className="bi bi-twitter"></i></a>
-              <a href="#" className="text-white"><i className="bi bi-facebook"></i></a>
-              <a href="#" className="text-white"><i className="bi bi-instagram"></i></a>
-              <a href="#" className="text-white"><i className="bi bi-github"></i></a>
-            </div>
-          </div>
+  <!-- Footer -->
+  <footer class="bg-black text-white pt-5">
+  <div class="container">
+    <div class="row text-center text-md-start">
 
-          <!-- Sección Compañía -->
-          <div className="col-md-2 mb-4">
-            <h6 className="text-uppercase fw-bold mb-4 small">Compañía</h6>
-            <ul className="list-unstyled small">
-              <li className="mb-3"><a href="#" className="text-secondary text-decoration-none">Inicio</a></li>
-              <li className="mb-3"><a href="#" className="text-secondary text-decoration-none">Sobre nosotros</a></li>
-              <li className="mb-3"><a href="#" className="text-secondary text-decoration-none">Tienda</a></li>
-              <li className="mb-3"><a href="#" className="text-secondary text-decoration-none">Contactanos</a></li>
+      <!-- LOGO -->
+      <div class="col-12 col-md-4 mb-4">
+        <h2 class="fw-bold">BLOOM<br>STUDIO</h2>
+
+        <div class="social-icons d-flex justify-content-center justify-content-md-start gap-3 mt-3">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
+
+      <!-- COMPAÑÍA / RECURSOS -->
+      <div class="col-12 col-md-4 mb-4">
+        <div class="row">
+          <div class="col-6">
+            <h5 class="fw-bold">COMPAÑÍA</h5>
+            <ul class="list-unstyled footer-list">
+              <li><a href="/Home.html">Inicio</a></li>
+              <li><a href="/AboutUs/AboutUs.html">Sobre nosotros</a></li>
+              <li><a href="/Shop/shop.html">Tienda</a></li>
+              <li><a href="/Contact/Contact.html">Contáctanos</a></li>
             </ul>
           </div>
 
-          <!-- Sección Recursos -->
-          <div className="col-md-2 mb-4">
-            <h6 className="text-uppercase fw-bold mb-4 small">Recursos</h6>
-            <ul className="list-unstyled small">
-              <li className="mb-3"><a href="#" className="text-secondary text-decoration-none">Spotify Playlist</a></li>
-              <li className="mb-3"><a href="#" className="text-secondary text-decoration-none">Blog</a></li>
-              <li className="mb-3"><a href="#" className="text-secondary text-decoration-none">Youtube Playlist</a></li>
+          <div class="col-6">
+            <h5 class="fw-bold">RECURSOS</h5>
+            <ul class="list-unstyled footer-list">
+              <li><a href="#">Spotify Playlist</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Youtube Playlist</a></li>
+              <li><a href="#">FAQs</a></li>
             </ul>
-          </div>
-
-          <!-- Sección Contacto y Pagos -->
-          <div className="col-md-4 mb-4 text-md-end">
-            <div className="mb-4">
-              <div className="d-flex justify-content-md-end align-items-center mb-3">
-                <div className="me-3">
-                  <p className="mb-0 fw-bold small">Tel</p>
-                  <p className="mb-0 text-secondary small">555-555-5555</p>
-                </div>
-                <i className="bi bi-telephone fs-4"></i>
-              </div>
-              <div className="d-flex justify-content-md-end align-items-center">
-                <div className="me-3">
-                  <p className="mb-0 fw-bold small">Mail</p>
-                  <p className="mb-0 text-secondary small">info@bloomstudio.com</p>
-                </div>
-                <i className="bi bi-envelope fs-4"></i>
-              </div>
-            </div>
-
-            <!-- Iconos de Pago -->
-            <div className="d-flex justify-content-md-end gap-2 mt-5">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" height="20" />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="Paypal" height="20" />
-              <img src="https://www.comercialsanluis.com/wp-content/uploads/2019/11/visa-logo-preview.png" alt="Visa" height="20" />
-            </div>
           </div>
         </div>
       </div>
 
-     <!--  Barra Inferior -->
-      <div className="py-3">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-8">
-              <div className="d-flex flex-wrap gap-4 small text-secondary">
-                <a href="#" className="text-secondary text-decoration-none">Sobre nosotros</a>
-                <a href="#" className="text-secondary text-decoration-none">Contacto</a>
-                <a href="#" className="text-secondary text-decoration-none">Privacidad</a>
-                <a href="#" className="text-secondary text-decoration-none">Terminos y condiciones</a>
-              </div>
-            </div>
-            <div className="col-md-4 text-md-end">
-              <p className="small text-secondary mb-0">
-                &copy; 2025, Todos los derechos reservados a <strong>Bloom Studio</strong>
-              </p>
-            </div>
+      <!-- CONTACTO -->
+      <div class="col-12 col-md-4 mb-4 text-center text-md-end">
+
+        <div class="d-flex justify-content-center justify-content-md-end align-items-center mb-3 me-2">
+          <div>
+            <small>Tel</small><br>
+            555-555-5555
           </div>
+          <span class="material-symbols-outlined ms-2">phone</span>
+        </div>
+
+        <div class="d-flex justify-content-center justify-content-md-end align-items-center mb-3">
+          <div>
+            <small>Mail</small><br>
+            info@bloomstudio.com
+          </div>
+          <span class="material-symbols-outlined ms-2">mail</span>
+        </div>
+
+        <div class="d-flex justify-content-center justify-content-md-end gap-3 mt-3">
+          <i class="fa-brands fa-cc-visa fa-2x"></i>
+          <i class="fa-brands fa-cc-mastercard fa-2x"></i>
+          <i class="fa-brands fa-paypal fa-2x"></i>
+          <i class="fa-brands fa-cc-apple-pay fa-2x"></i>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+   <!-- Barra inferior del footer -->
+<div class="footer-bottom py-3">
+  <div class="container">
+    <div class="row align-items-center text-center text-md-start">
+
+      <!-- Links legales -->
+      <div class="col-12 col-md-8 mb-2 mb-md-0">
+        <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-start gap-3 small">
+          <a href="#" class="footer-link">Sobre nosotros</a>
+          <a href="#" class="footer-link">Contacto</a>
+          <a href="#" class="footer-link">Privacidad</a>
+          <a href="#" class="footer-link">Términos y condiciones</a>
         </div>
       </div>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="./AboutUsCarousel.js"></script>
+      <!-- Copyright -->
+      <div class="col-12 col-md-4 text-md-end">
+        <p class="small mb-0 footer-copy">
+          &copy; 2025, Todos los derechos reservados a <strong>Bloom Studio</strong>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</footer>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="./AboutUsCarousel.js"></script>
+  <script src="../src/ScriptHeader/script.js"></script>
 </body>
+
 </html>

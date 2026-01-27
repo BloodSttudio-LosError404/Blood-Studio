@@ -1,0 +1,180 @@
+{
+  "catalog": {
+    "id": "base",
+    "name": "Catálogo base",
+    "currency": "MXN",
+    "updatedAt": "2026-01-19"
+  },
+  "products": [
+    {
+      "id": "p-0001",
+      "name": "Playera duo",
+      "description": "Celebra tu conexión con este set de playeras diseñado para parejas que aman compartir su estilo.",
+      "price": 450,
+      "rating": 4.8,
+      "reviews": 20,
+      "category": "playeras",
+      "season": "base",
+      "colors": ["otros"],
+      "sizes": ["S", "M", "L"],
+      "tags": ["personalizable"],
+      "image": {
+        "src": "../src/images/products/playeras/playera-001.png",
+        "alt": "Imagen referencial del producto"
+      }
+    },
+    {
+      "id": "p-0002",
+      "name": "Trio playera",
+      "description": "¡Lleva el lazo de la amistad al siguiente nivel con este set exclusivo para mejores amigas!",
+      "price": 630,
+      "rating": 4.6,
+      "reviews": 12,
+      "category": "playeras",
+      "season": "base",
+      "colors": ["negro"],
+      "sizes": ["UNICA"],
+      "tags": ["playera"],
+      "image": {
+        "src": "../src/images/products/playeras/playera-002.png",
+        "alt": "Imagen referencial del producto"
+      }
+    },
+    {
+      "id": "p-0003",
+      "name": "Sudadera capucha gris",
+      "description": "¡Haz realidad tus ideas con nuestra sudadera totalmente personalizable!",
+      "price": 399,
+      "rating": 4.6,
+      "reviews": 12,
+      "category": "sudadera",
+      "season": "base",
+      "colors": ["otros"],
+      "sizes": ["S", "M", "L"],
+      "tags": ["sudadera"],
+      "image": {
+        "src": "../src/images/products/sudaderas/sudadera-004.png",
+        "alt": "Imagen referencial del producto"
+      }
+    },
+    {
+      "id": "p-0004",
+      "name": "Playera blanca",
+      "description": "¡Lleva la identidad de tu marca al siguiente nivel con nuestras playeras polo de alta calidad!",
+      "price": 299,
+      "rating": 4.6,
+      "reviews": 12,
+      "category": "playeras",
+      "season": "base",
+      "colors": ["blanco"],
+      "sizes": ["S", "M", "L"],
+      "tags": ["playera"],
+      "image": {
+        "src": "../src/images/products/playeras/playera-004.png",
+        "alt": "Imagen referencial del producto"
+      }
+    },
+    {
+      "id": "p-0005",
+      "name": "Playera negra",
+      "description": "¡Lleva la identidad de tu marca al siguiente nivel con nuestras playeras polo de alta calidad!",
+      "price": 299,
+      "rating": 4.6,
+      "reviews": 12,
+      "category": "playeras",
+      "season": "base",
+      "colors": ["negro"],
+      "sizes": ["S", "M", "L"],
+      "tags": ["playera"],
+      "image": {
+        "src": "../src/images/products/playeras/playera-006.png",
+        "alt": "Imagen referencial del producto"
+      }
+    },
+    {
+      "id": "p-0006",
+      "name": "Flyers",
+      "description": "Promociona tu negocio o actividades con nuestros flyers.",
+      "price": 200,
+      "rating": 4.6,
+      "reviews": 12,
+      "category": "papeleria",
+      "season": "base",
+      "colors": ["otros"],
+      "sizes": ["UNICA"],
+      "tags": ["sercicios"],
+      "image": {
+        "src": "../src/images/products/servicios-digitales/servicio-001.png",
+        "alt": "Imagen referencial del producto"
+      }
+    },
+    {
+      "id": "p-0007",
+      "name": "Invitaciones",
+      "description": "Que nadie se quede fuera de tu fiesta, hazle llegar su invitación.",
+      "price": 150,
+      "rating": 4.6,
+      "reviews": 12,
+      "category": "papeleria",
+      "season": "base",
+      "colors": ["otros"],
+      "sizes": ["UNICA"],
+      "tags": ["servicios"],
+      "image": {
+        "src": "../src/images/products/servicios-digitales/servicio-002.png",
+        "alt": "Imagen referencial del producto"
+      }
+    },
+    {
+      "id": "p-0008",
+      "name": "Almbun estampas para pareja",
+      "description": "Reúne todos tus recuerdos y pégalos en nuestro álbum amoroso.",
+      "price": 250,
+      "rating": 4.6,
+      "reviews": 12,
+      "category": "temporada 14 febrero",
+      "season": "14 de febrero",
+      "colors": ["otros"],
+      "sizes": ["UNICA"],
+      "tags": ["regalo"],
+      "image": {
+        "src": "../src/images/products/temporada-14-febrero/temporada-001.png",
+        "alt": "Imagen referencial del producto"
+      }
+    },
+    {
+      "id": "p-0009",
+      "name": "Caja personalizada",
+      "description": "Diseño a tu medida: Personalizable de 1 a 2 caras con el nombre, mensaje o temática que prefieras.",
+      "price": 60,
+      "rating": 4.6,
+      "reviews": 12,
+      "category": "temporada 14 febrero",
+      "season": "14 de febrero",
+      "colors": ["otros"],
+      "sizes": ["UNICA"],
+      "tags": ["regalo"],
+      "image": {
+        "src": "../src/images/products/temporada-14-febrero/temporada-002.png",
+        "alt": "Imagen referencial del producto"
+      }
+    },
+    {
+      "id": "p-0010",
+      "name": "Vaso venti glitter",
+      "description": "Personaliza tu vaso, ponle tu nombre al sabor.",
+      "price": 45,
+      "rating": 4.6,
+      "reviews": 12,
+      "category": "vasos",
+      "season": "base",
+      "colors": ["negro"],
+      "sizes": ["UNICA"],
+      "tags": ["regalo"],
+      "image": {
+        "src": "../src/images/products/vasos/vasos-019.png",
+        "alt": "Imagen referencial del producto"
+      }
+    }
+  ]
+}
