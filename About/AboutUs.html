@@ -90,11 +90,13 @@
   </div>
 
   <!-- Poque nosotros -->
-  <div>
-    <p class="titulos-sobre-nosotros"> ¿Por qué nosotros? <img src="../src/images/persona.png"
-        class="por-que-nosotros-img"> </p>
 
-  </div>
+  <section class="why-us">
+    <div>
+      <p class="sobre-nosotros-parrafo"> ¿Por qué nosotros?</p>
+    </div>
+    <img src="../src/images/persona.png" class="why-img">
+  </section>
   <!-- Nuestra mision y valores  -->
 
   <!-- ====== MISIÓN ====== -->
@@ -140,6 +142,104 @@
 
 
   <!-- Que nos hace diferentes -->
+  <section class="different">
+    <div class="container text-center">
+      <p class="sobre-nosotros-parrafo section-title mb-5">¿Qué nos hace diferentes?</p>
+
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <img src="/src/images/ideas.png" class="icon mb-3">
+          <p class="about-diff-p">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Dolorem assumenda vero cupiditate delectus.</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <img src="/src/images/tiempo.png" class="icon mb-3">
+          <p class="about-diff-p">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Dolorem assumenda vero cupiditate delectus.</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <img src="/src/images/modelo3d.png" class="icon mb-3">
+          <p class="about-diff-p">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Dolorem assumenda vero cupiditate delectus.</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <img src="/src/images/calidad.png" class="icon mb-3">
+          <p class="about-diff-p">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Dolorem assumenda vero cupiditate delectus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="row align-items-start gy-4">
+
+        <!-- COLUMNA FAQ -->
+        <div class="col-12 col-lg-6">
+          <h2 class="faq-title mb-4">Preguntas frecuentes</h2>
+
+          <div class="accordion custom-accordion" id="faqAccordion">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#f1">
+                  ¿Qué servicios ofrecen?
+                </button>
+              </h2>
+              <div id="f1" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  Ofrecemos soluciones personalizadas, diseño, desarrollo y soporte.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f2">
+                  ¿Cuánto tiempo tarda un proyecto?
+                </button>
+              </h2>
+              <div id="f2" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Depende del alcance del proyecto.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f3">
+                  ¿Ofrecen soporte?
+                </button>
+              </h2>
+              <div id="f3" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Sí, ofrecemos acompañamiento continuo.
+                </div>
+              </div>
+            </div>
+
+            <!-- COLUMNA IMÁGENES -->
+            
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center">
+              <div class="faq-images">
+                <img src="/src/images/faqs-1.jpg" class="img-back" alt="">
+                <img src="/src/images/faqs-2.jpg" class="img-front" alt="">
+              </div>
+            </div>
+      </div>
+    </div>
+  </section>
+
+
+
 
   <!-- productos -->
 
@@ -161,20 +261,20 @@
 
   <!-- Footer -->
   <footer class="bg-black text-white pt-5">
-  <div class="container">
-    <div class="row text-center text-md-start">
+    <div class="container">
+      <div class="row text-center text-md-start">
 
       <!-- LOGO -->
       <div class="col-12 col-md-4 mb-4">
         <h2 class="fw-bold">BLOOM<br>STUDIO</h2>
 
-        <div class="social-icons d-flex justify-content-center justify-content-md-start gap-3 mt-3">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-github"></i>
+          <div class="social-icons d-flex justify-content-center justify-content-md-start gap-3 mt-3">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-github"></i>
+          </div>
         </div>
-      </div>
 
       <!-- COMPAÑÍA / RECURSOS -->
       <div class="col-12 col-md-4 mb-4">
@@ -189,76 +289,74 @@
             </ul>
           </div>
 
-          <div class="col-6">
-            <h5 class="fw-bold">RECURSOS</h5>
-            <ul class="list-unstyled footer-list">
-              <li><a href="#">Spotify Playlist</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Youtube Playlist</a></li>
-              <li><a href="#">FAQs</a></li>
-            </ul>
+            <div class="col-6">
+              <h5 class="fw-bold">RECURSOS</h5>
+              <ul class="list-unstyled footer-list">
+                <li><a href="#">Spotify Playlist</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Youtube Playlist</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </div>
           </div>
         </div>
+
+        <!-- CONTACTO -->
+        <div class="col-12 col-md-4 mb-4 text-center text-md-end">
+
+          <div class="d-flex justify-content-center justify-content-md-end align-items-center mb-3 me-2">
+            <div>
+              <small>Tel</small><br>
+              555-555-5555
+            </div>
+            <span class="contact-icons material-symbols-outlined ms-2">phone</span>
+          </div>
+
+          <div class="d-flex justify-content-center justify-content-md-end align-items-center mb-3">
+            <div>
+              <small>Mail</small><br>
+              info@bloomstudio.com
+            </div>
+            <span class="contact-icons material-symbols-outlined ms-2">mail</span>
+          </div>
+
+          <div class="d-flex justify-content-center justify-content-md-end gap-3 mt-3">
+            <i class="fa-brands fa-cc-visa fa-2x"></i>
+            <i class="fa-brands fa-cc-mastercard fa-2x"></i>
+            <i class="fa-brands fa-paypal fa-2x"></i>
+            <i class="fa-brands fa-cc-apple-pay fa-2x"></i>
+          </div>
+
+        </div>
+
       </div>
-
-      <!-- CONTACTO -->
-      <div class="col-12 col-md-4 mb-4 text-center text-md-end">
-
-        <div class="d-flex justify-content-center justify-content-md-end align-items-center mb-3 me-2">
-          <div>
-            <small>Tel</small><br>
-            555-555-5555
-          </div>
-          <span class="material-symbols-outlined ms-2">phone</span>
-        </div>
-
-        <div class="d-flex justify-content-center justify-content-md-end align-items-center mb-3">
-          <div>
-            <small>Mail</small><br>
-            info@bloomstudio.com
-          </div>
-          <span class="material-symbols-outlined ms-2">mail</span>
-        </div>
-
-        <div class="d-flex justify-content-center justify-content-md-end gap-3 mt-3">
-          <i class="fa-brands fa-cc-visa fa-2x"></i>
-          <i class="fa-brands fa-cc-mastercard fa-2x"></i>
-          <i class="fa-brands fa-paypal fa-2x"></i>
-          <i class="fa-brands fa-cc-apple-pay fa-2x"></i>
-        </div>
-
-      </div>
-
     </div>
-  </div>
 
-   <!-- Barra inferior del footer -->
-<div class="footer-bottom py-3">
-  <div class="container">
-    <div class="row align-items-center text-center text-md-start">
+    <!-- Barra inferior del footer -->
+    <div class="footer-bottom py-3">
+      <div class="container">
+        <div class="row align-items-center text-center text-md-start">
 
-      <!-- Links legales -->
-      <div class="col-12 col-md-8 mb-2 mb-md-0">
-        <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-start gap-3 small">
-          <a href="#" class="footer-link">Sobre nosotros</a>
-          <a href="#" class="footer-link">Contacto</a>
-          <a href="#" class="footer-link">Privacidad</a>
-          <a href="#" class="footer-link">Términos y condiciones</a>
+          <!-- Links legales -->
+          <div class="col-12 col-md-8 mb-2 mb-md-0">
+            <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-start gap-3 small">
+              <a href="#" class="footer-link">Privacidad</a>
+              <a href="#" class="footer-link">Términos y condiciones</a>
+            </div>
+          </div>
+
+          <!-- Copyright -->
+          <div class="col-12 col-md-4 text-md-end">
+            <p class="small mb-0 footer-copy">
+              &copy; 2025, Todos los derechos reservados a <strong>Bloom Studio</strong>
+            </p>
+          </div>
+
         </div>
       </div>
-
-      <!-- Copyright -->
-      <div class="col-12 col-md-4 text-md-end">
-        <p class="small mb-0 footer-copy">
-          &copy; 2025, Todos los derechos reservados a <strong>Bloom Studio</strong>
-        </p>
-      </div>
-
     </div>
-  </div>
-</div>
 
-</footer>
+  </footer>
 
 
 
