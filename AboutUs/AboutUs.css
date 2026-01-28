@@ -175,13 +175,12 @@ body {
 
 /* Sobre nosotros */
 .titulos-sobre-nosotros{
-    font-size: 78px;
-    font-weight: bold;
-    text-align: center;
     background:  linear-gradient(90deg, #FFCAB3, #C2B1E5);  ;
     padding: 1rem;
 }
 .sobre-nosotros-parrafo{
+  font-weight: bold;
+  font-size: 3.5rem;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -191,12 +190,12 @@ body {
 /* CONTENEDOR PRINCIPAL */
 .sobre-nosotros {
   display: grid;
-  grid-template-columns: 1fr 1.3fr;
+  grid-template-columns: 1fr 2fr;
   gap: 2rem;
 
   max-width: 100%;
   padding: 0 5%;
-  padding-right: 10%;
+  padding-right: 5%;
   margin: 3rem 0;
 
   align-items: start; 
@@ -255,10 +254,28 @@ body {
 
 
 /* ¿Por qué nosotros? */
-.por-que-nosotros-img{
-  width: 5%;
-  float: right;
-  margin: 0 10%;
+.why-us {
+  background: linear-gradient(90deg, #ffd1b8, #cbb9f3);
+  padding: 1rem 0;
+  position: relative;
+  overflow: visible;
+}
+
+.why-img {
+  position: absolute;
+  right: 5%;
+  bottom: 0;   /* hace que “salga” del fondo */
+  height: 170px;
+  z-index: 20;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .why-img {
+    position: static;   /* vuelve normal en móvil */
+    margin-top: 30px;
+    height: 220px;
+  }
 }
 
 /* Misión */
@@ -306,7 +323,7 @@ body {
 
 .about-mission__image img {
   width: 100%;
-  max-width: 520px;
+  max-width: 400px;
   height: auto;
   border-radius: 12px;
   object-fit: cover;
@@ -364,7 +381,7 @@ body {
 
 .vision__image img {
   width: 100%;
-  max-width: 520px;
+  max-width: 400px;
   height: auto;
   border-radius: 12px;
   object-fit: cover;
@@ -380,6 +397,117 @@ body {
 }
 
 /* Carousel */
+
+/* Diferenciadores */
+.different, .faq-section {
+  background: linear-gradient(90deg, #FFCAB3, #C2B1E5);
+  padding: 20px 0;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.icon {
+  width: 50%;
+  height: auto;
+}
+
+.about-diff-p{
+  text-align: justify;
+  margin: 1.5rem;
+}
+
+.different-title{
+  margin: 1rem;
+}
+
+.img-about-different{
+  width: 50%;
+  padding: 2rem;
+}
+
+.about-different-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FAQ */
+.faq-section {
+  background: #f7f4fc;
+  padding: 100px 0;
+}
+
+/* CONTENEDOR DE IMÁGENES */
+.faq-images {
+  position: relative;
+  width: 420px;
+  max-width: 100%;
+}
+
+.img-back {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+}
+
+.img-front {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75%;
+  z-index: 2;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* FAQ */
+.faq-images {
+  position: relative;
+  width: 420px;
+  max-width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: right
+}
+
+.img-back {
+  width: 80%;
+  border-radius: 18px;
+}
+
+.img-front {
+  position: absolute;
+  bottom: -40px;
+  right: 50%;
+  transform: translateX(-80%);
+  width: 75%;
+  z-index: 2;
+  box-shadow: 0 20px 35px rgba(0,0,0,.15);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .faq-title {
+    text-align: center;
+  }
+
+  .faq-images {
+    margin-top: 40px;
+    max-width: 300px;
+  }
+}
+
+.container{
+  padding: 1.5rem;
+}
+
+
+
+
+
+
 /* ===== TEAM CAROUSEL ===== */
 
 /* CONTENEDOR */
@@ -572,6 +700,10 @@ footer {
   font-size: 14px;
 }
 
+.contact-icons{
+  color: white;
+}
+
 footer ul li {
   margin-bottom: 6px;
 }
@@ -601,7 +733,7 @@ footer ul li {
 
 .social-icons i:hover {
   transform: translateY(-4px) scale(1.1);
-  color: #0d6efd; /* color Bootstrap primary */
+  color: #FFCAB3; /* color Bootstrap primary */
 }
 
 .material-symbols-outlined {
@@ -639,7 +771,7 @@ footer ul li {
   bottom: -3px;
   width: 0;
   height: 2px;
-  background-color: #0d6efd;
+  background-color: #C2B1E5;
   transition: width 0.3s ease;
 }
 
