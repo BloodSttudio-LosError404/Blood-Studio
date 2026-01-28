@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap');
-* {
-    font-family: "Figtree", sans-serif;
+html, body {
+  font-family: "Figtree", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+*, *::before, *::after {
+  font-family: inherit;
 }
 
 body {
@@ -9,185 +13,6 @@ body {
   background-color: #faf8ff;
 }
 
-/* ===== HEADER ===== */
-.header-principal {
-  background-color: #F9F7FF;
-  border-bottom: 1px solid #D9D9D9;
-  height: 100px;
-  display: flex;
-  align-items: center;
-}
-
-.header-contenido {
-  width: 100%;
-  padding: 0 5%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-}
-
-/* ===== LOGO ===== */
-.logo-img {
-  height: 95px;
-  transition: transform 0.3s ease;
-}
-
-.logo-img:hover {
-  transform: scale(1.05);
-}
-
-/* ===== NAV ===== */
-
-.nav-principal {
-  justify-self: center;
-}
-
-.nav-principal ul {
-  display: flex;
-  gap: 18px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-principal a {
-  text-decoration: none;
-  color: #000;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.nav-principal a:hover {
-  color: #4C3C68;
-}
-
-/* ===== BUSCADOR ===== */
-.contenedor-buscador {
-  display: flex;
-  align-items: center;
-}
-
-.contenedor-buscador input {
-  border: 1px solid #ced4da;
-  padding: 8px 14px;
-  border-radius: 25px 0 0 25px;
-  outline: none;
-}
-
-.contenedor-buscador button {
-  border: none;
-  background-color: #4C3C68;
-  color: white;
-  padding: 1px 16px;
-  border-radius: 0 25px 25px 0;
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contenedor-buscador .material-symbols-outlined {
-  font-size: px;
-  line-height: 1;
-  color: white;
-}
-
-
-/* ===== ICONOS ===== */
-.iconos-acciones {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.material-symbols-outlined {
-  font-size: 40px;
-  color: #4C3C68;
-  cursor: pointer;
-  transition: transform 0.25s ease;
-}
-
-.material-symbols-outlined:hover {
-  transform: scale(1.15);
-}
-
-#cuenta-carrito{
-  background-color: black ;
-  border-radius: 100%;
-  display: inline-block;
-  width: 20px;
-  line-height: 20px;
-  aspect-ratio: 1;
-  text-align: center;
-  position: absolute;
-  color: white;
-  font-size: 12px;
-}
-
-/* ===== HAMBURGUESA ===== */
-.barras {
-  display: none;
-  background-image: url('./../src/images/icono-menu.jpeg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  border: none;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-
-/* ===== MENÚ MÓVIL ===== */
-.desplegable {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 280px;
-  height: 100vh;
-  background-color: #F9F7FF;
-  transform: translateX(-100%);
-  transition: transform 0.4s ease;
-  box-shadow: 5px 0 15px rgba(0,0,0,0.1);
-  padding-top: 100px;
-  z-index: 1000;
-}
-
-.desplegable ul {
-  list-style: none;
-  padding: 0 30px;
-}
-
-.desplegable li a {
-  display: block;
-  padding: 15px 0;
-  text-decoration: none;
-  color: #4C3C68;
-  font-size: 1.2rem;
-  border-bottom: 1px solid #D9D9D9;
-}
-
-/* CLASE ACTIVA */
-.abrir-menu {
-  transform: translateX(0);
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 1024px) {
-  .nav-principal,
-  .contenedor-buscador {
-    display: none;
-  }
-
-  .barras {
-    display: block;
-  }
-
-  .logo-img {
-    height: 45px;
-  }
-}
 
 /* TÍTULO */
 .caja-degradado {
@@ -322,14 +147,12 @@ h2 {
   text-align: center;
   width: 100%;
   margin-bottom: 30px;
-  font-family: "Figtree", sans-serif;
 }
 
 h3 {
   text-align: center;
   width: 100%;
   margin-bottom: 30px;
-  font-family: "Figtree", sans-serif;
 
 }
 
@@ -399,11 +222,11 @@ h3 {
   }
 }
 
-a {
+main a {
     text-decoration: none;
      color: black;
 }
-a:hover {
+main a:hover {
     text-decoration: none; 
     color: black;
 }
@@ -464,86 +287,3 @@ a:hover {
 }
 
 
-/* ==== FOOTER ==== */
-footer {
-  font-size: 14px;
-}
-
-footer ul li {
-  margin-bottom: 6px;
-}
-
-.footer-list a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.footer-list li {
-  position: relative;
-  cursor: pointer;
-  color: #b5b5b5;
-  transition: color 0.3s ease, padding-left 0.3s ease;
-}
-
-.footer-list li:hover {
-  color: #ffffff;
-  padding-left: 6px;
-}
-
-.social-icons i {
-  font-size: 20px;
-  cursor: pointer;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.social-icons i:hover {
-  transform: translateY(-4px) scale(1.1);
-  color: #0d6efd; /* color Bootstrap primary */
-}
-
-.material-symbols-outlined {
-  font-size: 26px;
-}
-
-@media (max-width: 576px) {
-  footer h2 {
-    text-align: center;
-  }
-}
-
-/* BARRA INFERIOR FOOTER */
-.footer-bottom {
-  background: linear-gradient(to right, #111, #1a1a1a);
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.footer-link {
-  color: #b5b5b5;
-  text-decoration: none;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-.footer-link:hover {
-  color: #ffffff;
-}
-
-/* underline animado */
-.footer-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0;
-  height: 2px;
-  background-color: #0d6efd;
-  transition: width 0.3s ease;
-}
-
-.footer-link:hover::after {
-  width: 100%;
-}
-
-.footer-copy {
-  color: #b5b5b5;
-}

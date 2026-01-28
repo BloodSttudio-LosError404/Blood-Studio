@@ -1,8 +1,3 @@
-import { loadLayout } from "./layoutLoader.js";
-
-await loadLayout();
-
-
 import { loadCatalog } from "./catalogLoader.js";
 import { createStore } from "./storeView.js";
 

@@ -3,6 +3,10 @@ footer {
   font-size: 14px;
 }
 
+.contact-icons{
+  color: white;
+}
+
 footer ul li {
   margin-bottom: 6px;
 }
@@ -32,7 +36,7 @@ footer ul li {
 
 .social-icons i:hover {
   transform: translateY(-4px) scale(1.1);
-  color: #0d6efd; /* color Bootstrap primary */
+  color: #FFCAB3; /* color Bootstrap primary */
 }
 
 .material-symbols-outlined {
@@ -70,7 +74,7 @@ footer ul li {
   bottom: -3px;
   width: 0;
   height: 2px;
-  background-color: #0d6efd;
+  background-color: #C2B1E5;
   transition: width 0.3s ease;
 }
 
@@ -80,4 +84,17 @@ footer ul li {
 
 .footer-copy {
   color: #b5b5b5;
+}
+
+#cuenta-carrito{
+  background-color: black ;
+  border-radius: 100%;
+  display: inline-block;
+  width: 20px;
+  line-height: 20px;
+  aspect-ratio: 1;
+  text-align: center;
+  position: absolute;
+  color: white;
+  font-size: 12px;
 }
