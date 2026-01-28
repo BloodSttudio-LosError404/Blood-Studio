@@ -1,5 +1,3 @@
-
-
 export const loadPartial = async (mountId, url) => {
   const mountPoint = document.getElementById(mountId);
   if (!mountPoint) return;
@@ -19,4 +17,9 @@ export const loadLayout = async () => {
     loadPartial("appHeader", "../Layout/Header/index.html"),
     loadPartial("appFooter", "../Layout/Footer/index.html")
   ]);
+
+  
+  if (typeof window.initHeader === "function") {
+    window.initHeader();
+  }
 };
