@@ -6,11 +6,12 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Fightree', sans-serif;
   background: #f9fafb;
   color: #1f2933;
 }
 
+/* ===== LAYOUT ===== */
 /* ===== LAYOUT ===== */
 .layout {
   display: flex;
@@ -20,7 +21,7 @@ body {
 
 /* ===== SIDEBAR ===== */
 .sidebar {
-  width: 80px;
+  width: 220px;
   background: linear-gradient(180deg, #F9D1D1, #D4C1EC, #B4A5E4);
   border-radius: 24px;
   margin: 16px;
@@ -28,26 +29,53 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   transition: transform 0.3s ease;
 }
 
+/* NAV */
 .sidebar nav {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 12px;
 }
 
+/* LINKS */
 .sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 24px;
   color: white;
-  opacity: 0.7;
-  transition: 0.2s;
+  text-decoration: none;
+  opacity: 0.75;
+  transition: all 0.25s ease;
 }
 
+/* HOVER */
 .sidebar a:hover {
   opacity: 1;
-  transform: scale(1.15);
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
+  transform: scale(1.05);
 }
+
+/* ICONS */
+.sidebar .material-icons-round {
+  font-size: 22px;
+}
+
+/* TEXT */
+.sidebar .text {
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* LOGOUT FIX */
+.sidebar > a {
+  margin-bottom: 12px;
+}
+
 
 /* ===== MAIN ===== */
 .main {

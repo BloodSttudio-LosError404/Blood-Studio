@@ -25,17 +25,45 @@
     <div class="layout">
 
         <!-- SIDEBAR -->
-        <aside class="sidebar sticky-top" id="sidebar">
-            <nav>
-                <a href="/Dashboard/index.html"><span class="material-icons-round">home</span></a>
-                <a href="#"><span class="material-icons-round">shopping_cart</span></a>
-                <a href="#"><span class="material-icons-round">insert_chart</span></a>
-                <a href="#"><span class="material-icons-round">dashboard</span></a>
-                <a href="#"><span class="material-icons-round">notifications</span></a>
-                <a href="#"><span class="material-icons-round">settings</span></a>
-            </nav>
-            <a href="#"><span class="material-icons-round">logout</span></a>
-        </aside>
+         <!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+  <nav>
+    <a href="index.html">
+      <span class="material-icons-round">home</span>
+      <span class="text">Inicio</span>
+    </a>
+
+    <a href="./Administrator/admin.html">
+      <span class="material-icons-round">shopping_cart</span>
+      <span class="text">Tienda</span>
+    </a>
+
+    <a href="#">
+      <span class="material-icons-round">insert_chart</span>
+      <span class="text">Reportes</span>
+    </a>
+
+    <a href="#">
+      <span class="material-icons-round">dashboard</span>
+      <span class="text">Dashboard</span>
+    </a>
+
+    <a href="#">
+      <span class="material-icons-round">notifications</span>
+      <span class="text">Notificaciones</span>
+    </a>
+
+    <a href="#">
+      <span class="material-icons-round">settings</span>
+      <span class="text">Configuración</span>
+    </a>
+  </nav>
+
+  <a href="../index.html">
+    <span class="material-icons-round">logout</span>
+    <span class="text">Salir</span>
+  </a>
+</aside>
 
         <!-- MAIN -->
         <main class="admin-main">
@@ -119,8 +147,9 @@
         </main>
 
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="/Administrator/Storage.js"></script>
-        <script src="/Administrator/Admin.js"></script>
+        <script src="./Storage.js"></script>
+        <script src="./Admin.js"></script>
+        
 
 
 </body>
